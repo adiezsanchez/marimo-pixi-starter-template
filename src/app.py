@@ -1,6 +1,6 @@
 import marimo
 
-__generated_with = "0.10.12"
+__generated_with = "0.23.8"
 app = marimo.App(width="medium")
 
 
@@ -9,15 +9,11 @@ def _():
     import marimo as mo
 
     mo.md("Hello")
-    return (mo,)
+    return
 
 
 @app.cell
-def test_cell():
-    from utils import add
-
-    assert add(1, 2) == 3
-    assert 2 == 2
+def _():
     return
 
 
